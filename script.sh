@@ -24,3 +24,12 @@ case $option in
         echo "Invalid option! Try again." ;;
 esac
 
+LOGFILE="transactions.log"
+
+echo "Transaction started at $(date)" >> $LOGFILE
+echo "Executed by: $(whoami)" >> $LOGFILE
+echo "Processing banking operations..." >> $LOGFILE
+echo "Transaction completed successfully at $(date)" >> $LOGFILE
+echo "------------------------------------" >> $LOGFILE
+
+echo "Transaction Logged Successfully!"
